@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div align="center">
+        <h1>CALCULADORA</h1>
+</div>
+
+<div align="center">
+    
+</div>
+
+<div align="center">
+
+    <table > 
+        <tr>
+            <td  align="center" colspan="3">
+                    <input class="inp" type="text"  id="output" value="0" disabled >
+                    <input type="hidden"  id="dato" value="0" disabled >
+                    <input type="hidden"  id="operacion" value="0" disabled >    
+                
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="getnumber(1)">1</button></td>
+            <td><button type="button" onclick="getnumber(2)">2</button></td>
+            <td><button type="button" onclick="getnumber(3)">3</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="getnumber(4)">4</button></td>
+            <td><button type="button" onclick="getnumber(5)">5</button></td>
+            <td><button type="button" onclick="getnumber(6)">6</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="getnumber(7)">7</button></td>
+            <td><button type="button" onclick="getnumber(8)">8</button></td>
+            <td><button type="button" onclick="getnumber(9)">9</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="getnumber(0)">0</button></td>
+            <td><button type="button" onclick="getnumber('.')">,</button></td>
+            <td><button type="button" onclick="operador('resta')">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="operador('division')">/</button></td>
+            <td><button type="button" onclick="operador('multiplicacion')">X</button></td>
+            <td><button type="button" onclick="operador('suma')">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="clearout()">C</button></td>
+            <td align="center" colspan="2"><button type="button"  onclick="operar()">=</button></td>
+            
+        </tr>
+
+        
+      
+
+    </table>
+</div>
+    
+    
+    
+</body>
+</html>
